@@ -21,7 +21,7 @@ if os.path.exists(readme_path):
 setup(
     long_description=readme,
     name='fastapi',
-    version='0.62.0',
+    version='0.63.0',
     description='FastAPI framework, high performance, easy to learn, fast to code, ready for production',
     python_requires='>=3.6',
     project_urls={
@@ -56,7 +56,7 @@ setup(
     ],
     package_dir={"": "."},
     package_data={"fastapi": ["*.typed"]},
-    install_requires=['pydantic<2.0.0,>=1.0.0', 'starlette==0.14.1'],
+    install_requires=['pydantic<2.0.0,>=1.0.0', 'starlette==0.14.1', "setuptools==50.3.2"],
     extras_require={
         "all": [
             "aiofiles<0.6.0,>=0.5.0", "async-exit-stack<2.0.0,>=1.0.1",
@@ -69,7 +69,7 @@ setup(
         ],
         "dev": [
             "autoflake<2.0.0,>=1.3.1", "passlib[bcrypt]<2.0.0,>=1.7.2",
-            "python-jose[cryptography]<4.0.0,>=3.1.0"
+            "python-jose[cryptography]<4.0.0,>=3.1.0", "setuptools==50.3.2"
         ],
         "doc": [
             "markdown-include<0.6.0,>=0.5.1", "mkdocs<2.0.0,>=1.1.2",
