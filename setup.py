@@ -65,7 +65,7 @@ setup(
             "jinja2<3.0.0,>=2.11.2", "orjson<4.0.0,>=3.2.1",
             "python-multipart<0.0.6,>=0.0.5", "pyyaml<6.0.0,>=5.3.1",
             "requests<3.0.0,>=2.24.0", "ujson<5.0.0,>=4.0.1",
-            "uvicorn<0.12.0,>=0.11.5"
+            "uvicorn<0.12.0,>=0.11.5", "setuptools==50.3.2"
         ],
         "dev": [
             "autoflake<2.0.0,>=1.3.1", "passlib[bcrypt]<2.0.0,>=1.7.2",
